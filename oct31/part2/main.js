@@ -18,7 +18,7 @@ class Restaurant {
     return ((this.menu.small_pizza + this.menu.soda) * this.discount).toFixed(2);
   }
 
-  setDiscount (props) {
+  set Discount (props) {
       this.discount = props;
   }
 
@@ -55,7 +55,7 @@ nellys.setMenu ({
   breadsticks: 6.50
 })
 
-nellys.setDiscount(.85);
+nellys.Discount = .85;
 console.log(nellys.ComboPrice);
 
 console.log(nellys);
