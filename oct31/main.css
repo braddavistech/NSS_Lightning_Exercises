@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+#birdMan {
+  margin: 5vw;
+  margin-top: 0px;
+  text-align: center;
+}
+#title {
+  font-weight: bold;
+  font-size: 7vw;
+  margin: 2vw;
+  border: 2px solid black;
+}
+.birdFacts {
+  font-weight: bold;
+  padding: 1vw;
+  font-size: 2.25vw;
+}
+#bkgrnd {
+  width: 60%;
+  margin-left: 20%;
+}
