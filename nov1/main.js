@@ -14,7 +14,9 @@ class Person {
 
   // Write a setter that sets a nickname.
   set NickName (props) {
+    if (typeof(props) === "string") {
       this.nickName = props;
+    } else { console.log(`${props} isn't a string.`)}
   }
 
   get NickNamePrint () {
@@ -27,23 +29,22 @@ let Brad = new Person ({
   firstName: "Brad",
   lastName: "Davis"
 });
-
 Brad.NickName = "Big Country";
+Brad.NickName = 32;
 
 let Kevin = new Person ({
   firstName: "Kevin",
   lastName: "Burns"
 });
-
 Kevin.NickName = "NoddNodd";
 
 let Richard = new Person ({
   firstName: "Richard",
   lastName: "Nixon"
 });
-
 Richard.NickName = "Tricky Dick";
 
+console.log(Brad);
 console.log(Brad.FullName);
 console.log(Brad.NickNamePrint);
 
